@@ -13,6 +13,7 @@
 		0A723AB926DEA5790017CFB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A723AB726DEA5790017CFB5 /* Main.storyboard */; };
 		0A723ABB26DEA5890017CFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A723ABA26DEA5890017CFB5 /* Assets.xcassets */; };
 		0A723ABE26DEA5890017CFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A723ABC26DEA5890017CFB5 /* LaunchScreen.storyboard */; };
+		0A723ACF26DEC23A0017CFB5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A723ACE26DEC23A0017CFB5 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0A723ABA26DEA5890017CFB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A723ABD26DEA5890017CFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A723ABF26DEA5890017CFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A723ACE26DEC23A0017CFB5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		0A723AB026DEA5790017CFB5 /* AvatarQuizGame */ = {
 			isa = PBXGroup;
 			children = (
-				0A723AB126DEA5790017CFB5 /* AppDelegate.swift */,
-				0A723AB326DEA5790017CFB5 /* SceneDelegate.swift */,
-				0A723AB526DEA5790017CFB5 /* ViewController.swift */,
-				0A723AB726DEA5790017CFB5 /* Main.storyboard */,
-				0A723ABA26DEA5890017CFB5 /* Assets.xcassets */,
-				0A723ABC26DEA5890017CFB5 /* LaunchScreen.storyboard */,
-				0A723ABF26DEA5890017CFB5 /* Info.plist */,
+				0A723AC726DEC03F0017CFB5 /* ViewControllers */,
+				0A723ACD26DEC15C0017CFB5 /* Models */,
+				0A723AC826DEC0600017CFB5 /* Storyboards */,
+				0A723AC926DEC0770017CFB5 /* Resources */,
+				0A723ACA26DEC09B0017CFB5 /* App */,
 			);
 			path = AvatarQuizGame;
+			sourceTree = "<group>";
+		};
+		0A723AC726DEC03F0017CFB5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A723AB526DEA5790017CFB5 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A723AC826DEC0600017CFB5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0A723AB726DEA5790017CFB5 /* Main.storyboard */,
+				0A723ABC26DEA5890017CFB5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0A723AC926DEC0770017CFB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A723ABA26DEA5890017CFB5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A723ACA26DEC09B0017CFB5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A723AB126DEA5790017CFB5 /* AppDelegate.swift */,
+				0A723AB326DEA5790017CFB5 /* SceneDelegate.swift */,
+				0A723ABF26DEA5890017CFB5 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0A723ACD26DEC15C0017CFB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A723ACE26DEC23A0017CFB5 /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A723AB626DEA5790017CFB5 /* ViewController.swift in Sources */,
+				0A723ACF26DEC23A0017CFB5 /* Question.swift in Sources */,
 				0A723AB226DEA5790017CFB5 /* AppDelegate.swift in Sources */,
 				0A723AB426DEA5790017CFB5 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +332,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q7FR5CHKB;
-				INFOPLIST_FILE = AvatarQuizGame/Info.plist;
+				INFOPLIST_FILE = AvatarQuizGame/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +352,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q7FR5CHKB;
-				INFOPLIST_FILE = AvatarQuizGame/Info.plist;
+				INFOPLIST_FILE = AvatarQuizGame/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
