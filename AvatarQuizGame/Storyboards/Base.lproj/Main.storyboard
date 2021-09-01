@@ -109,7 +109,7 @@
         <!--Испытание №-->
         <scene sceneID="C3L-hh-YHb">
             <objects>
-                <viewController id="MC9-0f-WGe" sceneMemberID="viewController">
+                <viewController id="MC9-0f-WGe" customClass="QuestionViewController" customModule="AvatarQuizGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VXc-1g-SRY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,9 @@
                                         <rect key="frame" x="110.5" y="0.0" width="59" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="MC9-0f-WGe" eventType="touchUpInside" id="AMO-8V-Dkg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q93-9X-pO7">
                                         <rect key="frame" x="110.5" y="61" width="59" height="36"/>
@@ -201,6 +204,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fg8-Ks-nwo">
                                         <rect key="frame" x="0.0" y="268" width="288" height="30"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="MC9-0f-WGe" eventType="touchUpInside" id="Xc3-XE-o1a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -230,6 +236,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsj-T3-nlL">
                                         <rect key="frame" x="0.0" y="82.5" width="288" height="30"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="MC9-0f-WGe" eventType="touchUpInside" id="SSn-wO-f2L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -280,6 +289,26 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="multipleStackView" destination="46r-aH-9LI" id="LLe-am-Lxn"/>
+                        <outlet property="questionLabel" destination="zXG-LA-6Fy" id="Wkt-1a-nri"/>
+                        <outlet property="questionProgressView" destination="MVw-aT-n2r" id="jWZ-CP-7hD"/>
+                        <outlet property="rangedSlider" destination="bOb-AR-3ch" id="sec-PW-LeO"/>
+                        <outlet property="rangedStackView" destination="NK0-Ea-tiZ" id="OZA-lY-Uf8"/>
+                        <outlet property="singleStackView" destination="pki-Gf-X2x" id="XAH-bx-UE9"/>
+                        <outletCollection property="singleButtons" destination="RME-9n-P1h" collectionClass="NSMutableArray" id="6VC-sO-Eom"/>
+                        <outletCollection property="singleButtons" destination="Q93-9X-pO7" collectionClass="NSMutableArray" id="h2v-fP-HJY"/>
+                        <outletCollection property="singleButtons" destination="3Pw-iC-VQs" collectionClass="NSMutableArray" id="ZH2-jK-V9b"/>
+                        <outletCollection property="singleButtons" destination="Jd6-TK-pyb" collectionClass="NSMutableArray" id="J9r-mq-Qs9"/>
+                        <outletCollection property="multipleLabels" destination="ngB-p1-gy1" collectionClass="NSMutableArray" id="0W3-Y5-s73"/>
+                        <outletCollection property="multipleLabels" destination="zqd-o3-Hy1" collectionClass="NSMutableArray" id="l0x-ce-k3a"/>
+                        <outletCollection property="multipleLabels" destination="09v-vc-66y" collectionClass="NSMutableArray" id="XES-n3-m0d"/>
+                        <outletCollection property="multipleLabels" destination="RWg-n7-XJL" collectionClass="NSMutableArray" id="vyS-iT-nV4"/>
+                        <outletCollection property="multipleSwitches" destination="0bx-YE-161" collectionClass="NSMutableArray" id="db1-xU-VeS"/>
+                        <outletCollection property="multipleSwitches" destination="7Be-gH-Qnf" collectionClass="NSMutableArray" id="smf-mr-U4K"/>
+                        <outletCollection property="multipleSwitches" destination="7s5-vV-v5u" collectionClass="NSMutableArray" id="eLF-04-kf3"/>
+                        <outletCollection property="multipleSwitches" destination="wUt-CP-G6E" collectionClass="NSMutableArray" id="TZQ-Na-diZ"/>
+                        <outletCollection property="rangedLabels" destination="4kr-X2-kqr" collectionClass="NSMutableArray" id="4Es-fH-71k"/>
+                        <outletCollection property="rangedLabels" destination="SDw-FE-D5w" collectionClass="NSMutableArray" id="jmP-bt-S7k"/>
                         <segue destination="asW-S6-ZzY" kind="show" identifier="showResult" id="gGq-VA-uov"/>
                     </connections>
                 </viewController>
