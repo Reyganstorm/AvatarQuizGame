@@ -15,6 +15,7 @@
 		0A723ABE26DEA5890017CFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A723ABC26DEA5890017CFB5 /* LaunchScreen.storyboard */; };
 		0A723ACF26DEC23A0017CFB5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A723ACE26DEC23A0017CFB5 /* Question.swift */; };
 		0ABEBB7426E007CC00A18B5A /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABEBB7326E007CC00A18B5A /* QuestionViewController.swift */; };
+		0ABEBB7826E0279000A18B5A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABEBB7726E0279000A18B5A /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0A723ABF26DEA5890017CFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A723ACE26DEC23A0017CFB5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0ABEBB7326E007CC00A18B5A /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionViewController.swift; path = AvatarQuizGame/ViewControllers/QuestionViewController.swift; sourceTree = SOURCE_ROOT; };
+		0ABEBB7726E0279000A18B5A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				0A723AB526DEA5790017CFB5 /* IntrodactionViewController.swift */,
 				0ABEBB7326E007CC00A18B5A /* QuestionViewController.swift */,
+				0ABEBB7726E0279000A18B5A /* ResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				0A723ACF26DEC23A0017CFB5 /* Question.swift in Sources */,
 				0A723AB226DEA5790017CFB5 /* AppDelegate.swift in Sources */,
 				0A723AB426DEA5790017CFB5 /* SceneDelegate.swift in Sources */,
+				0ABEBB7826E0279000A18B5A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

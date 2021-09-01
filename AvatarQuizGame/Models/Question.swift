@@ -63,10 +63,10 @@ enum ResponseType {
 }
 
 enum Element: String {
-    case water = "answerWater"
-    case fire = "answerFire"
-    case earth = "answerEarth"
-    case air = "answerAir"
+    case water = "Water"
+    case fire = "Fire"
+    case earth = "Earth"
+    case air = "Air"
     
     var definition: String {
         switch self {
