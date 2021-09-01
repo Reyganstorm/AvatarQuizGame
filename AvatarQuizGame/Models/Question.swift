@@ -83,9 +83,4 @@ enum Element: String {
 }
 
 // MARK: IntroImage
-enum intoImageOfElements: String {
-    case fire = "introFire"
-    case earth = "introEarth"
-    case water = "introWater"
-    case air = "introAir"
-}
+let elementsForStart = ["introFire", "introAir", "introWater", "introEarth"  ]
